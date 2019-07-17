@@ -64,9 +64,12 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  for(var i = 0; i < people.length; i ++) {
-    people[i].isAuthor = true;
-  }
+  // for(var i = 0; i < people.length; i ++) {
+  //   people[i].isAuthor = true;
+  // }
+  people.forEach((element) => { // converted to forEach
+    element.isAuthor = true;
+  })
   console.log(people);
 };
 
@@ -86,9 +89,12 @@ console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
 const append = (arr1, arr2) => {
-  for(var i = 0; i < arr2.length; i++ ) {
-    arr1.push(arr2[i]);
-  }
+  // for(var i = 0; i < arr2.length; i++ ) {
+  //   arr1.push(arr2[i]);
+  // }
+  arr2.forEach((element) => { // converted to forEach
+    arr1.push(element)
+  });
   console.log(arr1);
 };
 
