@@ -27,6 +27,13 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   arr.push(arr[0]);
+  arr.forEach((element, index) => { // attempt to convert to fo
+    index = 0;
+    if(index) {
+      arr.push(element)
+    }
+  })
+  console.log(arr);
   console.log(arr);
 };
 
